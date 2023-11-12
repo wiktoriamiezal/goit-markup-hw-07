@@ -18,10 +18,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="container navigation">
+      <div class="container">
         <nav class="navigation">
           <a class="logo link" href="./index.html">Web<span class="studio">Studio</span></a>
-          <ul class="navigation">
+          <button
+            type="button"
+            class="menu-hamburger js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+              <g clip-path="url(#clip0_297053_2156)">
+                <path
+                  d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                  stroke="#2E2F42"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_297053_2156">
+                  <rect width="32" height="22" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <!-- <ul class="navigation">
             <li>
               <a class="navigation-link link current-site" href="./index.html">Studio</a>
             </li>
@@ -29,9 +52,9 @@
               <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li><a class="navigation-link link" href="">Contacts</a></li>
-          </ul>
+          </ul> -->
         </nav>
-        <address>
+        <!-- <address>
           <ul class="address">
             <li>
               <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -40,7 +63,7 @@
               <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
-        </address>
+        </address> -->
       </div>
     </header>
     <main>
@@ -108,7 +131,7 @@
           </ul>
         </div>
       </section>
-      <section class="section second-section">
+      <!-- <section class="section second-section">
         <div class="container">
           <h2 class="header-two">What are we doing</h2>
           <ul class="second-section-pics">
@@ -123,7 +146,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="our-team section">
         <div class="container">
           <h2 class="header-two">Our Team</h2>
@@ -131,6 +154,7 @@
             <li class="our-team-list">
               <img
                 src="./images/product-designer.jpg"
+                srcset="./images/product-designer@2x.jpg"
                 alt="man with dark hair, facial hair, toothless smile, wearing a blue shirt"
                 width="264"
                 height="260"
@@ -169,6 +193,7 @@
             <li class="our-team-list">
               <img
                 src="./images/frontend-developer.jpg"
+                srcset="./images/frontend-developer@2x.jpg"
                 alt="man with light brown hair, slight facial hair, smiling showing teeth, wearing a blue shirt, looking sideways"
                 width="264"
                 height="260"
@@ -207,6 +232,7 @@
             <li class="our-team-list">
               <img
                 src="./images/marketing.jpg"
+                srcset="./images/marketing@2x.jpg"
                 alt="woman with long brown hair, slight smile, wearing a pink sweater"
                 width="264"
                 height="260"
@@ -245,6 +271,7 @@
             <li class="our-team-list">
               <img
                 src="./images/ui-designer.jpg"
+                srcset="./images/ui-designer@2x.jpg"
                 alt="man with brown hair and bangs, smiling showing teeth, slight facial hair, wearing a gray t-shirt"
                 width="264"
                 height="260"
@@ -329,7 +356,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="ft-margin">
+        <div class="ft-logo">
           <a class="logo-footer link" href="./index.html">Web<span class="studio-footer">Studio</span></a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with digital marketing & growth
@@ -365,7 +392,7 @@
             </li>
           </ul>
         </div>
-        <div class="container footer-flex footer-subscribe">
+        <div class="container footer-subscribe">
           <p class="social-text">Subscribe</p>
           <form class="footer-form">
             <label for="user-email" class="footer-label">
@@ -377,7 +404,7 @@
                 required
                 class="footer-input"
             /></label>
-            <button class="subscribe-button footer-button" type="submit">
+            <button class="subscribe-button" type="submit">
               Subscribe
               <svg width="24" height="24" class="subscribe-svg">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -387,7 +414,7 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="closing-button">
           <svg width="8" height="8" class="closing-icon">
@@ -451,7 +478,9 @@
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
