@@ -639,10 +639,13 @@
     line-height: 1.11;
     letter-spacing: 0.02em;
   }
-  .mobile-links a:hover,
-  .mobile-links a:focus {
-    color: var(--IRIS);
+  .mobile-links a.active {
+    color: var(--OCEAN);
   }
+  .mobile-links a {
+    color: var(--NAVY-BLUE);
+  }
+
   .mobile-links li {
     margin: 0;
   }
@@ -669,7 +672,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
-    margin-bottom: 40px;
   }
 }
 
