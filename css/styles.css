@@ -612,6 +612,7 @@
     height: 100vh;
     transform: translateX(100%);
     transition: transform 250ms;
+    overflow-y: auto;
   }
   .mobile-menu.is-open {
     transform: translateX(0);
