@@ -18,29 +18,53 @@
   </head>
   <body>
     <header class="header">
-      <div class="container navigation">
-        <nav class="navigation">
-          <a class="logo link" href="./index.html">Web<span class="studio">Studio</span></a>
-          <ul class="navigation">
-            <li>
-              <a class="navigation-link link" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="navigation-link link current-site" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li><a class="navigation-link link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul class="address">
-            <li>
-              <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+      <div class="container">
+        <div class="header-flex">
+          <nav class="mobile-navigation navigation">
+            <a class="logo link" href="./index.html">Web<span class="studio">Studio</span></a>
+            <button
+              class="menu-hamburger menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+                <g clip-path="url(#clip0_297053_2156)">
+                  <path
+                    d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                    stroke="#2E2F42"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_297053_2156">
+                    <rect width="32" height="22" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <ul class="navigation-links">
+              <li>
+                <a class="navigation-link link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="navigation-link link current-site" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="navigation-link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="address">
+              <li>
+                <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>

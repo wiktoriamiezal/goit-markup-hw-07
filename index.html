@@ -19,50 +19,52 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo link" href="./index.html">Web<span class="studio">Studio</span></a>
-          <button
-            class="menu-hamburger menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
-              <g clip-path="url(#clip0_297053_2156)">
-                <path
-                  d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
-                  stroke="#2E2F42"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_297053_2156">
-                  <rect width="32" height="22" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-          <!-- <ul class="navigation">
-            <li>
-              <a class="navigation-link link current-site" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li><a class="navigation-link link" href="">Contacts</a></li>
-          </ul> -->
-        </nav>
-        <!-- <address>
-          <ul class="address">
-            <li>
-              <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address> -->
+        <div class="header-flex">
+          <nav class="mobile-navigation navigation">
+            <a class="logo link" href="./index.html">Web<span class="studio">Studio</span></a>
+            <button
+              class="menu-hamburger menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+                <g clip-path="url(#clip0_297053_2156)">
+                  <path
+                    d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                    stroke="#2E2F42"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_297053_2156">
+                    <rect width="32" height="22" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <ul class="navigation-links">
+              <li>
+                <a class="navigation-link link current-site" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="navigation-link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="address">
+              <li>
+                <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -130,7 +132,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section second-section">
+      <section class="section second-section">
         <div class="container">
           <h2 class="header-two">What are we doing</h2>
           <ul class="second-section-pics">
@@ -145,7 +147,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="our-team section">
         <div class="container">
           <h2 class="header-two">Our Team</h2>
@@ -354,7 +356,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-flex">
+      <div class="container footer-container">
         <div class="ft-logo">
           <a class="logo-footer link" href="./index.html">Web<span class="studio-footer">Studio</span></a>
           <p class="footer-text">
@@ -362,7 +364,7 @@
             solutions.
           </p>
         </div>
-        <div>
+        <div class="ft-social">
           <p class="social-text">Social media</p>
           <ul class="footer-social">
             <li class="footer-social-li">
@@ -391,7 +393,7 @@
             </li>
           </ul>
         </div>
-        <div class="container footer-subscribe">
+        <div class="footer-subscribe">
           <p class="social-text">Subscribe</p>
           <form class="footer-form">
             <label for="user-email" class="footer-label">
