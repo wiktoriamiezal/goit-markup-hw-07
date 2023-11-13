@@ -14,7 +14,9 @@
 }
 @media screen and (max-width: 767px) {
   * {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   img {
@@ -101,7 +103,6 @@
     background-size: cover;
     background-position: 50% 50%;
     max-width: 428px;
-    margin: 0 auto;
   }
   .main-header {
     color: var(--WHITE, #fff);
@@ -111,8 +112,7 @@
     line-height: 1.11;
     letter-spacing: 0.02em;
     padding-bottom: 48px;
-    max-width: 320px;
-    margin: 0 auto;
+    width: 320px;
     padding-bottom: 72px;
   }
   .btn-order {
@@ -173,8 +173,6 @@
   }
   .our-team {
     background-color: var(--CLOUD);
-    padding-left: 67px;
-    padding-right: 67px;
   }
 
   .our-team-list {
@@ -211,6 +209,9 @@
   }
 
   .social-links-icons {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -269,23 +270,10 @@
   .footer {
     background-color: var(--NAVY-BLUE);
     padding: 96px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-  .footer-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-  }
+
   .footer-subscribe {
-    margin: 0;
-  }
-  .ft-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
   }
 
   .logo-footer {
@@ -298,7 +286,12 @@
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
+  }
+  .ft-logo {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .studio-footer {
     color: var(--CLOUD);
@@ -310,6 +303,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 268px;
+    margin-bottom: 72px;
   }
   .social-text {
     text-align: center;
@@ -322,11 +316,14 @@
   }
   .footer-social {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
   }
   .footer-social-li {
     width: 40px;
     height: 40px;
+    margin: 0 8px;
   }
   .footer-link {
     width: 100%;
@@ -341,9 +338,11 @@
   .footer-svg {
     fill: var(--CLOUD);
   }
-
+  .footer-form {
+    text-align: center;
+  }
   .footer-input {
-    width: 398px;
+    width: 100%;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -357,15 +356,12 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-bottom: 16px;
   }
   .footer-input::placeholder {
     color: var(--WHITE);
   }
-  .footer-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+
   .subscribe-button {
     min-width: 165px;
     display: inline-flex;
@@ -380,7 +376,6 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0 auto;
   }
 
   .subscribe-svg {
