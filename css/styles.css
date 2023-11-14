@@ -50,7 +50,7 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .link {
   text-decoration: none;
@@ -95,7 +95,7 @@ body {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 22px;
-  max-width: 428px;
+  max-width: 100%;
 }
 
 .header {
@@ -113,7 +113,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  max-width: 428px;
+  max-width: 100%;
 }
 .main-header {
   color: var(--WHITE, #fff);
@@ -122,7 +122,7 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  width: 320px;
+  max-width: 320px;
   padding-bottom: 72px;
 }
 .btn-order {
@@ -409,13 +409,18 @@ body {
   pointer-events: none;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 428px) {
+  .modal {
+    max-width: 290px;
+  }
+}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 392px;
-  max-height: 584px;
+  min-height: 584px;
   background-color: var(--DAIRY);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
@@ -633,8 +638,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   transform: translateX(100%);
   transition: transform 250ms;
   overflow-y: auto;
@@ -772,10 +777,10 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(/goit-markup-hw-07/images/background-picture-tablet.jpg);
     background-color: var(--NAVY-BLUE);
-    max-width: 768px;
+    max-width: 100%;
   }
   .main-header {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     padding-bottom: 36px;
@@ -950,7 +955,7 @@ body {
       url(/goit-markup-hw-07/images/background-picture.jpg);
     background-color: var(--NAVY-BLUE);
     padding: 188px 0;
-    max-width: 1158px;
+    max-width: 1440px;
   }
   .btn-order:focus,
   .btn-order:hover {
